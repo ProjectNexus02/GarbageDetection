@@ -1,6 +1,7 @@
 import os
 import cv2
 import csv
+from .csv_path import CSV_FILE_NAME
 
 
 IMG_RELATIVE_PATH = "imgs"
@@ -19,7 +20,7 @@ def create_csv():
     imgs_metadata = [
         metadata for list_of_metadata in imgs_metadata for metadata in list_of_metadata
     ]
-    with open("images.csv", "w") as csvfile:
+    with open(CSV_FILE_NAME, "w") as csvfile:
         field_names = ["garbage_type", "path", "height", "width"]
         writer = csv.DictWriter(csvfile, fieldnames=field_names)
         writer.writeheader()
