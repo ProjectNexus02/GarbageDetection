@@ -22,6 +22,8 @@ dependencies {
     compile "com.android.support:support-v13:27.0.2"
     compile "com.android.support:cardview-v7:27.0.2"
     compile "com.android.support:appcompat-v7:27.0.2"
+    compile "org.deeplearning4j:deeplearning4j-core:1.0.0-beta4"
+    compile "org.nd4j:nd4j-native-platform:1.0.0-beta4"
 }
 
 // The sample build uses multiple directories to
